@@ -17,12 +17,32 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="dist/css/styles.css" rel="stylesheet" />
+        <!-- FontAwesome Icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
 
         <style>
             .portfolio-img {
                 height: 30rem; /* You can adjust the height as needed */
                 object-fit: cover; /* Ensures the image maintains its aspect ratio while covering the container */
                 width: 100%; /* Ensures the image spans the full width of the container */
+            }
+
+            /* Default for larger screens (no gap) */
+            .social-icons {
+                display: flex !important;
+                flex-direction: row !important;
+                padding-left: 0;
+                margin-bottom: 0;
+                margin-top: 0;
+                list-style: none;
+            }
+
+            /* Apply gap only for mobile screens */
+            @media (max-width: 991px) {
+                .social-icons {
+                    gap: 1rem; /* Adjust the spacing between icons for mobile */
+                }
             }
         </style>
     </head>
@@ -40,12 +60,53 @@
                   </a>                                  
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
+
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                         <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#calendar">Calendar</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
+
+                        <!-- Social media icons -->
+                        <ul class="navbar-nav d-flex flex-row ms-auto my-2 my-lg-0 social-icons" style="align-items: center;">
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://bsky.app/profile/darningneedleknits.bsky.social" target="_blank" rel="noopener" style="padding-left: 2rem;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 600 530" fill="currentColor">
+                                        <path d="m135.72 44.03c66.496 49.921 138.02 151.14 164.28 205.46 26.262-54.316 97.782-155.54 164.28-205.46 47.98-36.021 125.72-63.892 125.72 24.795 0 17.712-10.155 148.79-16.111 170.07-20.703 73.984-96.144 92.854-163.25 81.433 117.3 19.964 147.14 86.092 82.697 152.22-122.39 125.59-175.91-31.511-189.63-71.766-2.514-7.3797-3.6904-10.832-3.7077-7.8964-0.0174-2.9357-1.1937 0.51669-3.7077 7.8964-13.714 40.255-67.233 197.36-189.63 71.766-64.444-66.128-34.605-132.26 82.697-152.22-67.108 11.421-142.55-7.4491-163.25-81.433-5.9562-21.282-16.111-152.36-16.111-170.07 0-88.687 77.742-60.816 125.72-24.795z"/>
+                                    </svg>                            </a>
+                                </li>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.etsy.com/shop/DarningNeedleKnits" target="_blank" rel="noopener" style="padding-left: 0rem;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 152 152">
+                                        <defs>
+                                            <mask id="etsyMask">
+                                            <rect width="100%" height="100%" fill="white"/>
+                                            <path d="m104.19 91.78-2.59 8.34a10.61 10.61 0 0 1 -10.15 7.47h-19.86a5.34 5.34 0 0 1 -5.34-5.33v-22.41h14.38a6.83 6.83 0 0 1 6.83 6.83v1.76a1 1 0 0 0 1 1h3a1 1 0 0 0 .94-1v-25.87a.94.94 0 0 0 -.94-.94h-3a1 1 0 0 0 -1 .94v2.76a6.83 6.83 0 0 1 -6.83 6.83h-14.38v-22.42a5.34 5.34 0 0 1 5.34-5.33h18.86a8.82 8.82 0 0 1 8.83 8.82v5.32a.94.94 0 0 0 .94.94h3.45a1 1 0 0 0 .94-.87l1.46-18.27a2.19 2.19 0 0 0 -2.18-2.35h-59.89a1.51 1.51 0 0 0 -1.51 1.51v3.39a1.52 1.52 0 0 0 1.51 1.51h3.83a5.34 5.34 0 0 1 5.34 5.33v52.52a5.34 5.34 0 0 1 -5.34 5.33h-3.83a1.52 1.52 0 0 0 -1.51 1.51v3.39a1.51 1.51 0 0 0 1.51 1.51h60.38a2.18 2.18 0 0 0 2.16-1.86l3-19.94a1 1 0 0 0 -.94-1.08h-3.5a1 1 0 0 0 -.91.66z"
+                                                    fill="black"/>
+                                            </mask>
+                                        </defs>
+                                        <circle cx="76" cy="76" r="76" fill="currentColor" mask="url(#etsyMask)"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.ravelry.com/people/DarningNeedleKnit" target="_blank" rel="noopener" style="padding-left: 0rem;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 97.75 97.75">
+                                        <defs>
+                                        <mask id="ravelryMask">
+                                            <rect width="100%" height="100%" fill="black"/>
+                                            <path d="m48.875 0c-26.992 0-48.875 21.883-48.875 48.875s21.883 48.875 48.875 48.875 48.875-21.883 48.875-48.875-21.883-48.875-48.875-48.875zm23.684 32.96c-1.754-1.142-3.287-2.124-4.806-3.129-8.511-5.622-16.633-4.374-21.456 4.617-2.665 4.976-3.868 11.151-4.196 16.87-.633 11.119-.186 22.3-.186 33.73-5.048 0-9.39 0-13.931 0 0-23.595 0-46.8 0-70.376h14.129v13.991c13.38-17.398 21.632-21.504 37.653-7.689-2.28 3.791-4.625 7.691-7.207 11.986z"
+                                            fill="white" />
+                                        </mask>
+                                        </defs>
+                                        <circle cx="48.875" cy="48.875" r="48.875" fill="currentColor" mask="url(#ravelryMask)" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>                                                                     
+                    </ul>                      
                 </div>
             </div>
         </nav>
@@ -188,12 +249,21 @@
             <div class="container px-4 px-lg-5 text-center">
                 <h2 class="mb-4">See more products and projects </h2><br>
                 <a class="btn btn-light btn-xl" href="https://www.etsy.com/shop/DarningNeedleKnits" style="margin-right:30px; width: 150px;">Etsy</a>
-                <a class="btn btn-light btn-xl" href="https://www.ravelry.com/projects/JuliasKnitNook" style="width: 150px;">Ravelry</a><br><br><br>
-                <h3 class="mb-4">or find me at the next market</h2>
-                <p>Schedule TBA</p>
-                
+                <a class="btn btn-light btn-xl" href="https://www.ravelry.com/projects/DarningNeedleKnit" style="width: 150px;">Ravelry</a><br><br><br>
             </div>
         </section>
+        <!-- Calendar-->
+        <section class="page-section bg-primary" id="calendar">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 col-xl-6 text-center">
+                        <h2 class="text-white mt-0">Find me at the next market</h2>
+                        <hr class="divider divider-light" />
+                        <p class="text-white-75">Schedule TBA</p>
+                    </div>
+                </div>  
+            </div>
+        </section> 
         <!-- Contact-->
         <section class="page-section" id="contact" style="padding: 4rem;">
             <div class="container px-4 px-lg-5">
