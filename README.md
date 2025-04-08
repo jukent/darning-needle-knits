@@ -8,4 +8,9 @@ Template: [Creative](https://startbootstrap.com/theme/creative/) is a one page, 
 
 Masthead Picture: Photo by <a href="https://unsplash.com/@hoch3fotografie?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">hoch3fotografie</a> on <a href="https://unsplash.com/photos/blue-damselfly-perched-on-green-leaf-in-close-up-photography-during-daytime-hysUqxXcQ-k?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 
-Yarn Icon: <a href="https://www.flaticon.com/free-icons/yarn" title="yarn icons">Yarn icons created by Sergei Kokota - Flaticon</a>
+Icons: 
+ - https://www.flaticon.com/free-icon/dragonfly_9523180
+ - https://www.flaticon.com/free-icon/twisted_2442382
+ - https://www.flaticon.com/free-icon/knitting_6029999
+ - https://www.flaticon.com/free-icon/beanie_9296768
+ - https://www.flaticon.com/free-icon/heart_6005303
