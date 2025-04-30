@@ -11047,12 +11047,10 @@ header.masthead h1, header.masthead .h1 {
 @media screen and (max-width: 768px) {
   .portfolio .photos-protfolio .row > div {
     width: 100%;
-    max-width: 100%;
+    max-width: 100;
+    height: 100%;
   }
 
-  .portfolio .image-portfolio {
-    height: 250px;
-  }
   .portfolio .center-div {
     left: 0px;
     top: 0px;
@@ -11061,6 +11059,10 @@ header.masthead h1, header.masthead .h1 {
   .portfolio .top-section {
     left: 0px;
     top: 0px;
+  }
+  
+  .mittens {
+    margin-top: 1rem !important;
   }
 }
 
