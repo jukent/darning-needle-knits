@@ -10960,14 +10960,10 @@ header.masthead h1, header.masthead .h1 {
 
 .portfolio .image-portfolio {
   width: 100%;
-  height: 300px;
+  aspect-ratio: 1 / 1;
   overflow: hidden;
   position: relative;
   
-  -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  -moz-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  -o-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  -ms-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 
@@ -10985,12 +10981,111 @@ header.masthead h1, header.masthead .h1 {
 
 .portfolio .center-div {
   position: relative;
-  left: 147px;
+  left: 165px;
   top: -30px;
 }
 
 .portfolio .top-section {
   position: relative;
   top: -50px;
-  left: -147px;
+  left: -165px;
 }
+
+@media screen and (max-width: 1024px) {
+  .portfolio .center-div {
+    left: 60px;
+    top: -20px;
+  }
+
+  .portfolio .top-section {
+    left: -60px;
+    top: -30px;
+  }
+}
+
+.portfolio .center-div,
+.portfolio .top-section {
+  transition: left 0.3s ease, top 0.3s ease;
+}
+
+@media screen and (max-width: 1399px) and (min-width: 1199px) {
+  .portfolio .center-div {
+    left: 140px;
+    top: -15px;
+  }
+
+  .portfolio .top-section {
+    left: -140px;
+    top: -30px;
+  }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  .portfolio .center-div {
+    left: 120px;
+    top: -15px;
+  }
+
+  .portfolio .top-section {
+    left: -120px;
+    top: -30px;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .portfolio .center-div {
+    left: 90px;
+    top: -15px;
+  }
+
+  .portfolio .top-section {
+    left: -90px;
+    top: -30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio .photos-protfolio .row > div {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .portfolio .image-portfolio {
+    height: 250px;
+  }
+  .portfolio .center-div {
+    left: 0px;
+    top: 0px;
+  }
+
+  .portfolio .top-section {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+
+#lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.lightbox-content img {
+  max-width: 90vw;
+  max-height: 90vh;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+#lightbox-overlay.hidden {
+  display: none;
+}
+
